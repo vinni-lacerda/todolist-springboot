@@ -21,17 +21,17 @@ public class Task implements Serializable {
     private String status;
     private Instant createdAt;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
+//    @ManyToOne
+//    @JoinColumn(name = "user_id")
+//    private User user;
 
-    public Task(Long id, String title, String description, String status, Instant createdAt, User user) {
+    public Task(Long id, String title, String description, String status, Instant createdAt){//User user) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.status = status;
         this.createdAt = createdAt;
-        this.user = user;
+//        this.user = user;
     }
 
     public Task() {
@@ -73,11 +73,11 @@ public class Task implements Serializable {
         this.createdAt = createdAt;
     }
 
-    public User getUser() {
-        return user;
-    }
+//    public User getUser() {
+//        return user;
+//    }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
+//    public void setUser(User user) {
+//        this.user = user;
+//    }
 }

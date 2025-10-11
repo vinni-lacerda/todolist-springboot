@@ -16,8 +16,8 @@ public class User implements Serializable {
 
     private String name;
     private String email;
-    @OneToMany(mappedBy = "user")
-    private Task task;
+//    @OneToMany(mappedBy = "user")
+//    private Task task;
 
     public User(long id, String name, String email) {
         this.id = id;

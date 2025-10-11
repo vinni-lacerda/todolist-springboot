@@ -35,7 +35,7 @@ public class TaskService {
         obj.setTitle(task.getTitle());
         obj.setDescription(task.getDescription());
         obj.setStatus(task.getStatus());
-        obj.setUser(task.getUser());
+//        obj.setUser(task.getUser());
         obj.setCreatedAt(task.getCreatedAt());
 
         return taskRepository.save(obj);
