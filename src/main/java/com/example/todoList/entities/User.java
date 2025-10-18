@@ -17,7 +17,7 @@ public class User implements Serializable {
 
     private String name;
     private String email;
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
     private List<Task> tasks;
 
     public User(long id, String name, String email) {
