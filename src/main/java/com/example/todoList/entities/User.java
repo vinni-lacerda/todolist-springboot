@@ -3,6 +3,7 @@ package com.example.todoList.entities;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Table(name = "user")
@@ -16,8 +17,8 @@ public class User implements Serializable {
 
     private String name;
     private String email;
-//    @OneToMany(mappedBy = "user")
-//    private Task task;
+    @OneToMany(mappedBy = "user")
+    private List<Task> tasks;
 
     public User(long id, String name, String email) {
         this.id = id;

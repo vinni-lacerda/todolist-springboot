@@ -21,9 +21,9 @@ public class Task implements Serializable {
     private String status;
     private Instant createdAt;
 
-//    @ManyToOne
-//    @JoinColumn(name = "user_id")
-//    private User user;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
     public Task(Long id, String title, String description, String status, Instant createdAt){//User user) {
         this.id = id;

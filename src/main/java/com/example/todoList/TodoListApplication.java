@@ -8,6 +8,7 @@ public class TodoListApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TodoListApplication.class, args);
+        System.out.println("api is running");
 	}
 
 }
